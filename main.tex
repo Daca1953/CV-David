@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{308446}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{David A. Casas Amézquita}
+\tagline{INGENIERO ELECTRÓNICO}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Información de cabecera
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\photo{3.5cm}{me} % <----FOTO de perfil si la quiere usar
+
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ise.david.casas@gmail.com}
+  \phone{(+57) 305 2978 444}
+  \location{Chía, Cundinamarca}
+  \linkedin{www.linkedin.com/in/david-casas-amezquita}\\
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-7cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\textbf{Pagina Web: \href{https://dacaprogramming.com/about}{https://dacaprogramming.com/about}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PERFIL PROFESIONAL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection[page1sidebar]{Perfil Profesional}
+Ingeniero Electrónico enfocado en desarrollar sus aptitudes y cualidades en el campo de Data Science e Inteligencia Artificial, aplciado en el desarrollo de productos o sistemas, con buen conocimiento y manejo de diferentes lenguajes de programación como Python, C/C++. VHDL, entre otros. Excelente manejo de herramientas ofimáticas. Capacidad y motivación para el trabajo colaborativo orientado siempre al desarrollo del crecimiento personal/profesional orientado al logro.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%EDUCACIÓN F
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Formal
+\cvsection{Educación}
+\begin{itemize}
+\item \cvevent{Ingeniero Electrónico}{\href{https://www.escuelaing.edu.co}{Escuela Colombiana de Ingeniería Julio Garavito}}{Sep 2019}{Bogotá, Colombia}
+
+\item \cvevent{Programa de Formación en Inteligencia Artificial}{\href{https://portal.icetex.gov.co/Portal/Home/HomeEstudiante/fondos-en-administracion-Listado/convocatoria-inteligencia-artificial-2020-1}{Beca MinTIC 2020}}{Ene-Oct/2020}{Bogotá, Colombia}
+\end{itemize}
+
+\divider
+%Informal
+\begin{itemize}
+\item \cvevent{Internet of Things}{\href{https://platzi.com/iot/}{Platzi}}{Ju 2019}{Bogotá, Colombia}
+
+\item \cvevent{Python Programmer}{\href{http://www.datacamp.com}{DataCamp}}{Feb 2019}{Bogotá, Colombia}
+
+\item \cvevent{Ciencia de Datos}{\href{https://platzi.com/datos/}{Platzi}}{Jul 2019}{Bogotá, Colombia}
+
+\item \cvevent{Estructura del Lenguaje de Programación c++}{SENA}{Oct 2015}{Bogotá, Colombia}
+\hspace{1mm}
+\end{itemize}
+
+He realizado múltiples cursos virtuales por medio de plataformas virtuales como \href{http://www.coursera.org/}{Coursera} y \href{http://www.platzi.com}{Platzi} que no listo en el documento pero que pueden ser confirmados en el siguiente \href{https://platzi.com/@daca1953/}{\textbf{Link}}.
+\newpage
+
+%EXPERIENCIA LABORAL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection[page2sidebar]{Experiencia Laboral}
+
+\begin{itemize}
+
+\item \cvevent{Emprendimiento}{RepCas}{Ene/2020 - hoy}{Chía, Cundinamarca}
+Encargado de Tecnología y mantenimiento de las impresoras 3D así como su puesta en marcha y manejo de sistemas de gestión de impresoras por medio de red local.\\
+\divider
+
+\item \cvevent{Diseñador Electrónico}{Independiente}{Mar - Jul/2020}{Chía, Cundinamarca}
+Diseñar e implementar circuitos electrónicos, desde su diseño en programas CAD hasta su construcción y puesta en marcha en el producto final. el proceso consiste en la programación, diseño de PCB y construcción. 
+\divider
+
+\item \cvevent{Diseñador Paginas Web}{Independiente}{--}{Chía, Cundinamarca}
+Diseñador, maquetador y gestor de paginas web de blogs y emprendimientos concibiendo la idea desde el inicio hasta el despliegue de la misma.\\
+\divider
+
+\item \cvevent{Ingeniero de soporte}{SI Ingeniería}{Enero-Jun/2019}{Bogotá, Colombia}
+Responsable de realizar soporte a proyectos en marcha y desarrollo en diseño e implementación en el área técnica en nuevos proyectos relacionados con redes y control.\\
+\email{http://www.siingenieria.com}\phone{+57 1 5 200 800}
+\divider
+
+\item \cvevent{Asesor de tecnología}{Casa Aerea SAS}{Ene-Jul/2017}{Chía, Cundinamarca}
+Encargado de realizar control de inventarios, digitalización y actualización en sistema de control de inventarios y de estar atento al funcionamiento de los equipos de la empresa.
+\email{casaaerea@gmail.com}
+\phone{(+57) 320 268 1435}
+\hspace{40mm}
+\end{itemize}
+    
+\end{document}
